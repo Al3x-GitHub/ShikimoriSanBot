@@ -1,7 +1,7 @@
 {
       "name": "Shikimori San Robot",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://te.legra.ph/file/bad205819e5eb892df3e6.jpg",
+      "logo": "https://te.legra.ph/file/0c13eb00aaba21dd2f541.jpg",
       "keywords": [
          "telegram",
          "sexy",
@@ -23,17 +23,17 @@
       "TOKEN": {
          "description": "Get bot token from @BotFather on TG",
          "required": true,
-         "value": ""
+         "value": "5479279921:AAHSJtXht83WyfPR1Pvp5qZpeB855CXo_nM"
       },
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": ""
+         "value": "12738003"
       },
       "API_HASH": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": ""
+         "value": "b00dd4adc30230fcd86dde58f5dee5d0"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, Leave this field empty if you don't have one.",
@@ -70,22 +70,22 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": ""
+         "value": "-1001690340848"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": ""
+         "value": "-1001501356475"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": ""
+         "value": "NS1L49IK9JK5NOFW"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": ""
+         "value": "GEPQT8JKXS7P"
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Fallen Support then keep the current ID's here at they are and add yours.",
@@ -151,7 +151,7 @@
       "START_IMG": {
       "description": "Telegraph link of the image which will be shown at start command.",
          "required": true,
-         "value": ""
+         "value": "https://te.legra.ph/file/621f9ce10b0862fe1a795.jpg"
    }
    }
 }
