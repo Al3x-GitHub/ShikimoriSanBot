@@ -21,9 +21,9 @@
 </p>
 
 
-<h2 align="center">
+<h3 align="center">
     ─「 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 & 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 」─
-</h2>
+</h3>
 
 <div align="center">
 
