@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://github.com/AL3X-Github/ShikimoriSanBot/blob/main/Shikimori/resources/Insta-%40ikx7.a.png">
+  <img src="https://te.legra.ph/file/8949c1e9871e390d9c28e.jpg">
 </p>
 
 <p align="center">
