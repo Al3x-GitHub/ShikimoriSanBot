@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/8949c1e9871e390d9c28e.jpg">
+  <img src="https://github.com/AL3X-Github/ShikimoriSanBot/blob/main/Shikimori/resources/1666033658392.jpg">
 </p>
 
 <p align="center">
@@ -15,6 +15,11 @@
 </h3>
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AL3X-Github/ShikimoriSanBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+<p align="center">
+  <img src="https://github.com/AL3X-Github/ShikimoriSanBot/blob/main/Shikimori/resources/1666033658392.jpg">
+</p>
+
 
 <h2 align="center">
     ─「 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 & 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 」─
