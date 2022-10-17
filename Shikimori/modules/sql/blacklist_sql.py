@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import BigInteger, Column, String, UnicodeText, distinct, func
 
-from FallenRobot.modules.sql import BASE, SESSION
+from Shikimori.modules.sql import BASE, SESSION
 
 
 class BlackListFilters(BASE):

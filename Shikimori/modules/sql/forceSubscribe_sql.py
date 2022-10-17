@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Numeric, String
 
-from FallenRobot.modules.sql import BASE, SESSION
+from Shikimori.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

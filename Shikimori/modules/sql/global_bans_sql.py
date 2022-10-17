@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
-from FallenRobot.modules.sql import BASE, SESSION
+from Shikimori.modules.sql import BASE, SESSION
 
 
 class GloballyBannedUsers(BASE):

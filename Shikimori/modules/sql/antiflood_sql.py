@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import BigInteger, Column, String, UnicodeText
 
-from FallenRobot.modules.sql import BASE, SESSION
+from Shikimori.modules.sql import BASE, SESSION
 
 DEF_COUNT = 1
 DEF_LIMIT = 0
