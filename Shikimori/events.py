@@ -5,7 +5,7 @@ from pathlib import Path
 from pymongo import MongoClient
 from telethon import events
 
-from FallenRobot import MONGO_DB_URI, telethn
+from Shikimori import MONGO_DB_URI, telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -143,7 +143,7 @@ def bot(**args):
     return decorator
 
 
-def fallenrobot(**args):
+def Shikimori(**args):
     pattern = args.get("pattern", None)
     args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
