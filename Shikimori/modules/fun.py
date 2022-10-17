@@ -6,11 +6,11 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
 
-import FallenRobot.modules.fun_strings as fun_strings
-from FallenRobot import dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_user
+import Shikimori.modules.fun_strings as fun_strings
+from Shikimori import dispatcher
+from Shikimori.modules.disable import DisableAbleCommandHandler
+from Shikimori.modules.helper_funcs.chat_status import is_user_admin
+from Shikimori.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 

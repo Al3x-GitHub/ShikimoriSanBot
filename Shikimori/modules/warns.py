@@ -25,26 +25,26 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import TIGERS, WOLVES, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import (
+from Shikimori import TIGERS, WOLVES, dispatcher
+from Shikimori.modules.disable import DisableAbleCommandHandler
+from Shikimori.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from Shikimori.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.helper_funcs.misc import split_message
-from FallenRobot.modules.helper_funcs.string_handling import split_quotes
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql import warns_sql as sql
-from FallenRobot.modules.sql.approve_sql import is_approved
+from Shikimori.modules.helper_funcs.filters import CustomFilters
+from Shikimori.modules.helper_funcs.misc import split_message
+from Shikimori.modules.helper_funcs.string_handling import split_quotes
+from Shikimori.modules.log_channel import loggable
+from Shikimori.modules.sql import warns_sql as sql
+from Shikimori.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

@@ -6,7 +6,7 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from FallenRobot import SUPPORT_CHAT, dispatcher, pbot
+from Shikimori import SUPPORT_CHAT, dispatcher, pbot
 
 
 def get_text(message: Message) -> [None, str]:
@@ -43,7 +43,7 @@ async def wall(client, message):
             .url
         )
         img = Image.open(io.BytesIO(requests.get(randc).content))
-        fname = "fallenrobot.png"
+        fname = "shikimori.png"
         img.save(fname, "png")
         caption = f"""
 💘 ᴡᴀʟʟᴩᴀᴩᴇʀ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 

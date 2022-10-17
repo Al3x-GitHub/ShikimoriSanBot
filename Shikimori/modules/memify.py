@@ -3,10 +3,10 @@ import textwrap
 
 from PIL import Image, ImageDraw, ImageFont
 
-from FallenRobot import telethn as bot
-from FallenRobot.events import register
+from Shikimori import telethn as bot
+from Shikimori.events import register
 
-Credit = "AnonymousBoy1025"
+Credit = "AL3X-Github"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -34,7 +34,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "AnonymousBoy1025" in Credit:
+    if "AL3X-Github" in Credit:
         pass
 
     else:
@@ -69,7 +69,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./FallenRobot/resources/default.ttf"
+        fnt = "./Shikimori/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 

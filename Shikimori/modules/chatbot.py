@@ -24,11 +24,11 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.chatbot_sql as sql
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.log_channel import gloggable
+import Shikimori.modules.sql.chatbot_sql as sql
+from Shikimori import dispatcher
+from Shikimori.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from Shikimori.modules.helper_funcs.filters import CustomFilters
+from Shikimori.modules.log_channel import gloggable
 
 
 @run_async

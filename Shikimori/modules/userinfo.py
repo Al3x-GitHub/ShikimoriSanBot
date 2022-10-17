@@ -18,8 +18,8 @@ from telethon import events
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 
-import FallenRobot.modules.sql.userinfo_sql as sql
-from FallenRobot import (
+import Shikimori.modules.sql.userinfo_sql as sql
+from Shikimori import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -29,14 +29,14 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot import telethn as FallenTelethonClient
-from FallenRobot.__main__ import STATS, TOKEN, USER_INFO
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
-from FallenRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot.modules.sql.afk_sql import check_afk_status, is_afk
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
-from FallenRobot.modules.sql.users_sql import get_user_num_chats
+from Shikimori import telethn as FallenTelethonClient
+from Shikimori.__main__ import STATS, TOKEN, USER_INFO
+from Shikimori.modules.disable import DisableAbleCommandHandler
+from Shikimori.modules.helper_funcs.chat_status import sudo_plus
+from Shikimori.modules.helper_funcs.extraction import extract_user
+from Shikimori.modules.sql.afk_sql import check_afk_status, is_afk
+from Shikimori.modules.sql.global_bans_sql import is_user_gbanned
+from Shikimori.modules.sql.users_sql import get_user_num_chats
 
 
 def no_by_per(totalhp, percentage):
@@ -324,10 +324,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/AnonAssociation/7"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/c/1626957484/6"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/AnonAssociation/8"
+                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/c/1626957484/7"
                             ),
                         ],
                     ]

@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.approve_sql as sql
-from FallenRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot.modules.log_channel import loggable
+import Shikimori.modules.sql.approve_sql as sql
+from Shikimori import DRAGONS, dispatcher
+from Shikimori.modules.disable import DisableAbleCommandHandler
+from Shikimori.modules.helper_funcs.chat_status import user_admin
+from Shikimori.modules.helper_funcs.extraction import extract_user
+from Shikimori.modules.log_channel import loggable
 
 
 @loggable

@@ -14,19 +14,19 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import TIGERS, WOLVES, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.helper_funcs.alternate import send_message
-from FallenRobot.modules.helper_funcs.chat_status import (
+from Shikimori import TIGERS, WOLVES, dispatcher
+from Shikimori.modules.connection import connected
+from Shikimori.modules.helper_funcs.alternate import send_message
+from Shikimori.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from FallenRobot.modules.helper_funcs.string_handling import extract_time
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql import antiflood_sql as sql
-from FallenRobot.modules.sql.approve_sql import is_approved
+from Shikimori.modules.helper_funcs.string_handling import extract_time
+from Shikimori.modules.log_channel import loggable
+from Shikimori.modules.sql import antiflood_sql as sql
+from Shikimori.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 

@@ -14,8 +14,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.global_bans_sql as sql
-from FallenRobot import (
+import Shikimori.modules.sql.global_bans_sql as sql
+from Shikimori import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -27,17 +27,17 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from Shikimori.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from Shikimori.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.helper_funcs.misc import send_to_list
-from FallenRobot.modules.sql.users_sql import get_user_com_chats
+from Shikimori.modules.helper_funcs.misc import send_to_list
+from Shikimori.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 

@@ -7,7 +7,7 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import (
+from Shikimori import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -17,15 +17,15 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from Shikimori.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from FallenRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot.modules.log_channel import gloggable
+from Shikimori.modules.helper_funcs.extraction import extract_user
+from Shikimori.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "FallenRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Shikimori/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:

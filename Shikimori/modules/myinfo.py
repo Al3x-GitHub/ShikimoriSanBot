@@ -5,9 +5,9 @@ from datetime import datetime
 
 from telethon import custom, events
 
-from FallenRobot import telethn as bot
-from FallenRobot import telethn as tgbot
-from FallenRobot.events import register
+from Shikimori import telethn as bot
+from Shikimori import telethn as tgbot
+from Shikimori.events import register
 
 edit_time = 5
 """ =======================FALLEN ROBOT====================== """
@@ -65,7 +65,7 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "POWERED BY 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 \n\n"
+        LILIE = "POWERED BY I𝗓υɱi 和泉 \n\n"
         LILIE += f"FIRST NAME : {PRO.first_name} \n"
         LILIE += f"LAST NAME : {PRO.last_name}\n"
         LILIE += f"YOU BOT : {PRO.bot} \n"

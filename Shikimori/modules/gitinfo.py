@@ -2,8 +2,8 @@
 import aiohttp
 from pyrogram import filters
 
-from FallenRobot import pbot
-from FallenRobot.pyrogramee.errors import capture_err
+from Shikimori import pbot
+from Shikimori.pyrogramee.errors import capture_err
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
 

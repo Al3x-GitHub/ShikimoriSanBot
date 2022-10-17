@@ -3,10 +3,10 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from FallenRobot import OWNER_ID
-from FallenRobot import OWNER_USERNAME as uWu
-from FallenRobot import START_IMG, SUPPORT_CHAT, pbot
-from FallenRobot.utils.errors import capture_err
+from Shikimori import OWNER_ID
+from Shikimori import OWNER_USERNAME as uWu
+from Shikimori import START_IMG, SUPPORT_CHAT, pbot
+from Shikimori.utils.errors import capture_err
 
 
 def content(msg: Message) -> [None, str]:
@@ -108,7 +108,7 @@ async def close_send_photo(_, CallbackQuery):
 
 
 __help__ = """
-*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ*
+*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ sʜɪᴋɪᴍᴏʀɪ ✘ ʙᴏᴛ*
  ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
 """
 __mod_name__ = "Bᴜɢ"

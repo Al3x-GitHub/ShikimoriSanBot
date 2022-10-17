@@ -5,7 +5,7 @@ import yt_dlp
 from pyrogram import filters
 from youtube_search import YoutubeSearch
 
-from FallenRobot import SUPPORT_CHAT, pbot
+from Shikimori import SUPPORT_CHAT, pbot
 
 
 def time_to_seconds(time):

@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from FallenRobot.utils.fonts import Fonts
+from Shikimori.utils.fonts import Fonts
 
 
 @Client.on_message(filters.command(["font", "fonts"]))

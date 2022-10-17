@@ -1,4 +1,4 @@
-from FallenRobot import LOAD, LOGGER, NO_LOAD
+from Shikimori import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():

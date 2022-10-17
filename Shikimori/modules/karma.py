@@ -2,9 +2,9 @@ import asyncio
 
 from pyrogram import filters
 
-from FallenRobot import OWNER_ID
-from FallenRobot import pbot as app
-from FallenRobot.helper_extra.dbfun import (
+from Shikimori import OWNER_ID
+from Shikimori import pbot as app
+from Shikimori.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -14,8 +14,8 @@ from FallenRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.permissions import adminsOnly
+from Shikimori.utils.errors import capture_err
+from Shikimori.utils.permissions import adminsOnly
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|thankyou|love|pro)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|kid|shit|mf)$"

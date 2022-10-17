@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.blacklist_sql as sql
-from FallenRobot import LOGGER, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_text
-from FallenRobot.modules.helper_funcs.misc import split_message
-from FallenRobot.modules.helper_funcs.string_handling import extract_time
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.approve_sql import is_approved
-from FallenRobot.modules.warns import warn
+import Shikimori.modules.sql.blacklist_sql as sql
+from Shikimori import LOGGER, dispatcher
+from Shikimori.modules.connection import connected
+from Shikimori.modules.disable import DisableAbleCommandHandler
+from Shikimori.modules.helper_funcs.alternate import send_message, typing_action
+from Shikimori.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Shikimori.modules.helper_funcs.extraction import extract_text
+from Shikimori.modules.helper_funcs.misc import split_message
+from Shikimori.modules.helper_funcs.string_handling import extract_time
+from Shikimori.modules.log_channel import loggable
+from Shikimori.modules.sql.approve_sql import is_approved
+from Shikimori.modules.warns import warn
 
 BLACKLIST_GROUP = 11
 

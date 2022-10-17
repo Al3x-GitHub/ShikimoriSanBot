@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 from TruthDarePy import TD
 
-from FallenRobot import dispatcher
+from Shikimori import dispatcher
 
 love = TD()
 

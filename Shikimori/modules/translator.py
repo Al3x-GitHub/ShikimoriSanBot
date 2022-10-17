@@ -2,8 +2,8 @@ from gpytranslate import SyncTranslator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
-from FallenRobot import dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from Shikimori import dispatcher
+from Shikimori.modules.disable import DisableAbleCommandHandler
 
 trans = SyncTranslator()
 
@@ -16,7 +16,7 @@ def totranslate(update: Update, context: CallbackContext) -> None:
             "Reply to messages or write messages from other languages ​​for translating into the intended language\n\n"
             "Example: `/tr en-hi` to translate from English to Hindi\n"
             "Or use: `/tr en` for automatic detection and translating it into english.\n"
-            "Click here to see [List of available Language Codes](https://t.me/DevilsHeavenMF/148391).",
+            "Click here to see [List of available Language Codes](https://t.me/c/1626957484/5).",
             parse_mode="markdown",
             disable_web_page_preview=True,
         )

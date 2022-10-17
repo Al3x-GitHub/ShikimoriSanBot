@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from FallenRobot import HEROKU_API_KEY, HEROKU_APP_NAME, OWNER_ID
-from FallenRobot.events import register
+from Shikimori import HEROKU_API_KEY, HEROKU_APP_NAME, OWNER_ID
+from Shikimori.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)

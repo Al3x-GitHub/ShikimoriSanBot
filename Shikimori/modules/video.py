@@ -11,7 +11,7 @@ from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 
-from FallenRobot import pbot
+from Shikimori import pbot
 
 
 def get_file_extension_from_url(url):

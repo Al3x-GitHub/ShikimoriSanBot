@@ -6,14 +6,14 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.blacklistusers_sql as sql
-from FallenRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus
-from FallenRobot.modules.helper_funcs.extraction import (
+import Shikimori.modules.sql.blacklistusers_sql as sql
+from Shikimori import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from Shikimori.modules.helper_funcs.chat_status import dev_plus
+from Shikimori.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.log_channel import gloggable
+from Shikimori.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS

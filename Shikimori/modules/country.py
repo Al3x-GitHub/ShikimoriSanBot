@@ -1,9 +1,9 @@
 import flag
 from countryinfo import CountryInfo
 
-from FallenRobot import dispatcher
-from FallenRobot import telethn as borg
-from FallenRobot.events import register
+from Shikimori import dispatcher
+from Shikimori import telethn as borg
+from Shikimori.events import register
 
 
 @register(pattern="^/country (.*)")
