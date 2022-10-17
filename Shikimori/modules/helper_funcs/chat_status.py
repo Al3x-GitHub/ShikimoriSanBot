@@ -6,7 +6,7 @@ from cachetools import TTLCache
 from telegram import Chat, ChatMember, ParseMode, Update
 from telegram.ext import CallbackContext
 
-from FallenRobot import (
+from Shikimori import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from FallenRobot.modules import connection
+from Shikimori.modules import connection
 
 connected = connection.connected
