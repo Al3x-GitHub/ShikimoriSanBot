@@ -48,8 +48,8 @@ def extract_user_and_text(
         user_id = get_user_id(user)
         if not user_id:
             message.reply_text(
-                "No idea who this user is. You'll be able to interact with them if "
-                "you reply to that person's message instead, or forward one of that user's messages."
+                "No Idea Who This User Is. You'll Be Able To Interact With Them If"
+                "You Reply To That Person's Message Instead, Or Forward One Of That User's Messages."
             )
             return None, None
 
@@ -74,10 +74,10 @@ def extract_user_and_text(
     try:
         message.bot.get_chat(user_id)
     except BadRequest as excp:
-        if excp.message in ("User_id_invalid", "Chat not found"):
+        if excp.message in ("User_id_invalid", "Chat Not Found"):
             message.reply_text(
-                "I don't seem to have interacted with this user before - please forward a message from "
-                "them to give me control! (like a voodoo doll, I need a piece of them to be able "
+                "I Don't Seem To Have Interacted With This User Before - Please Forward A Message From"
+                "Them To Give Me Control! (like a voodoo doll, I need a piece of them to be able "
                 "to execute certain commands...)"
             )
         else:
@@ -122,8 +122,8 @@ def extract_unt_fedban(
         user_id = get_user_id(user)
         if not user_id and not isinstance(user_id, int):
             message.reply_text(
-                "I don't have that user in my db.  "
-                "You'll be able to interact with them if you reply to that person's message instead, or forward one of that user's messages."
+                "I Don't Have That User In My Database.  "
+                "You'll Be Able To Interact With Them If You Reply To That Person's Message Instead, Or Forward One Of That User's Messages."
             )
             return None, None
 
@@ -148,17 +148,17 @@ def extract_unt_fedban(
     try:
         message.bot.get_chat(user_id)
     except BadRequest as excp:
-        if excp.message in ("User_id_invalid", "Chat not found") and not isinstance(
+        if excp.message in ("User_id_invalid", "Chat Not Found") and not isinstance(
             user_id, int
         ):
             message.reply_text(
-                "I don't seem to have interacted with this user before "
-                "please forward a message from them to give me control! "
-                "(like a voodoo doll, I need a piece of them to be able to execute certain commands...)"
+                "I Don't Seem To Have Interacted With This User Before "
+                "Please Forward A tmessage From Them To Give Me Control! "
+                "(like a voodoo doll, I need a piece of them to be Able To Execute Certain Commands...)"
             )
             return None, None
         elif excp.message != "Chat not found":
-            LOGGER.exception("Exception %s on user %s", excp.message, user_id)
+            LOGGER.exception("Exception %s On User %s", excp.message, user_id)
             return None, None
         elif not isinstance(user_id, int):
             return None, None
