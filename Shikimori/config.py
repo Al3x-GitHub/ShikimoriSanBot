@@ -51,7 +51,7 @@ class Config(object):
     )
     ALLOW_EXCL = True
     CASH_API_KEY = ""
-    TIME_API_KEY = ""
+    TIME_API_KEY = "GEPQT8JKXS7P"
     BL_CHATS = []
     SPAMMERS = None
     ALLOW_CHATS = True
