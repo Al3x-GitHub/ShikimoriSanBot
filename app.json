@@ -142,7 +142,7 @@
       "DONATION_LINK": {
          "description": "Link where you would like to receive donations.",
          "required": false,
-         "value": "https://t.me/MaximXRobot"
+         "value": "https://t.me/Donation_No_Need"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
