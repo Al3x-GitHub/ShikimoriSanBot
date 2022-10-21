@@ -216,7 +216,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_sticker( "BQACAgEAAxkDA3wEaGNSTbJgeuK2AAFBlugpVBK8hf6rAwACQQIAAodPmUYrMGvDWVGneCoE"
+            update.effective_message.reply_sticker(
+                "BQACAgEAAxkDA3wEaGNSTbJgeuK2AAFBlugpVBK8hf6rAwACQQIAAodPmUYrMGvDWVGneCoE"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -227,7 +228,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="I'm Alive [Baby](https://t.me/MaximXRobot) !\n<b>I Didn't Slept Since:</b> <code>{}</code>".format(
+            caption="❏ I'm Alive 🥱\n<b>┗ I Didn't Slept Since :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -363,7 +364,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
             text=f"*Hey,*\n  *This Is {BOT_NAME}*"
             "\n*A Powerful Group Management Bot Build To Help You Manage Your Group Easily And To Protect Your Group From Scammers And Spammers.*"
-            "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
+            "\n*Written In Python With SQL And MongoDB As Database.*"
             "\n\n────────────────────"
             f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
             f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
