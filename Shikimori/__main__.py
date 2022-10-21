@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hey* {},
+*Hey* {}, 🥀
 
 ➤ This Is {}
 ➤ The Most Powerful Telegram Group Management Bot With Some Awesome And Helpful Features.
@@ -228,7 +228,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="❏ I'm Alive 🥱\n<b>┗ I Didn't Slept Since :</b> <code>{}</code>".format(
+            caption="❏ I'm Alive ✌️!\n<b>┗ I Didn't Slept Since :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
-    LOGGER.error(msg="Exception While Handling An Update:", exc_info=context.error)
+    LOGGER.error(msg="Exception While Handling An Update :", exc_info=context.error)
 
     # traceback.format_exception returns the usual python message about an exception, but as a
     # list of strings rather than a single string, so we have to join them together.
@@ -307,7 +307,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "» *Available Commands For* *{}* :\n".format(
+                "» *Available Commands For​​* *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -420,7 +420,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="• Mʏ Bᴀʙʏ •", url=f"https://t.me/MaximXRobot"
+                            text="• Mʏ Bᴀʙʏ •", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
                             text="• Gɪᴛʜᴜʙ •",
@@ -460,8 +460,7 @@ Written In *Python* With Help : [Tᴇʟᴇᴛʜᴏɴ](https://github.com/LonamiW
 Ans Using [Sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) And [Mᴏɴɢᴏ](https://cloud.mongodb.com) As Database.
 
 
-☁️ Source Code : [Gɪᴛʜᴜʙ](https://t.me/+vBu5aXlocTkwNGM1)
-ㅤ
+*Source Code* : [Gɪᴛʜᴜʙ](https://t.me/+vBu5aXlocTkwNGM1)
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -495,7 +494,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ​",
+                                text="Hᴇʟᴘ​",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -506,12 +505,12 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» Choose An Option For Getting Help.",
+            "» Choose An Option For Getting.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="Oᴩᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -519,7 +518,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="Oᴩᴇɴ Hᴇʀᴇ",
                             callback_data="help_back",
                         )
                     ],
@@ -626,7 +625,7 @@ def settings_button(update: Update, context: CallbackContext):
             curr_page = int(prev_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi There! There Are Quite A Few Settings For {} - Go Ahead And Pick What "
+                "Hi There! Are Quite A Few Settings For {} - Go Ahead And Pick What "
                 "You're Interested In.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
@@ -640,7 +639,7 @@ def settings_button(update: Update, context: CallbackContext):
             next_page = int(next_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi There! There Are Quite A Few Settings For {} - Go Ahead And Pick What "
+                "Hi There! Are Quite A Few Settings For {} - Go Ahead And Pick What "
                 "You're Interested In.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
@@ -653,7 +652,7 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = back_match.group(1)
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                text="Hi there! There Are Quite A Few Settings For {} - Go Ahead And Pick What "
+                text="Hi There! Are Quite A Few Settings For {} - Go Ahead And Pick What "
                 "You're Interested In.".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -666,11 +665,11 @@ def settings_button(update: Update, context: CallbackContext):
         query.message.delete()
     except BadRequest as excp:
         if excp.message not in [
-            "Message Is Not Modified",
+            "Message is not modified",
             "Query_id_invalid",
-            "Message Can't Be Deleted",
+            "Message can't be deleted",
         ]:
-            LOGGER.exception("Exception In Settings Buttons. %s", str(query.data))
+            LOGGER.exception("Exception in settings buttons. %s", str(query.data))
 
 
 @run_async
@@ -689,7 +688,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="• sᴇᴛᴛɪɴɢs •​",
+                                text="Sᴇᴛᴛɪɴɢs​",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -733,11 +732,11 @@ def donate(update: Update, context: CallbackContext):
             )
 
             update.effective_message.reply_text(
-                "I've PM'ed You About Donating To My Baby"
+                "I've PM'ed You About Donating To My Baby!"
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact Me In PM First To Get dmDonation Information."
+                "Contact Me In PM First To Get Donation Information."
             )
 
 
@@ -768,14 +767,13 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ I'm Alive [Baby](https://t.me/MaximXRobot).
-
-┏•❅────✧❅✦❅✧────❅•┓
-ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
-ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
-ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗•❅────✧❅✦❅✧────❅•┛""",
+ㅤ {BOT_NAME} I'm Alive [Baby](https://t.me/MaximXRobot).
+╔═══════════════╗
+  **ᴘʏᴛʜᴏɴ :** `{y()}`
+ㅤ**ʟɪʙʀᴀʀʏ :** `{telever}`
+ㅤ**ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
+ㅤ**ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+╚═══════════════╝""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
