@@ -7,7 +7,7 @@ from telegraph import Telegraph, exceptions, upload_file
 from Shikimori import telethn as tbot
 from Shikimori.events import register
 
-Anonymous = "Fallen"
+Anonymous = "Shikimori"
 TMP_DOWNLOAD_DIRECTORY = "./"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Anonymous)
@@ -91,6 +91,9 @@ I can upload files to Telegraph
  ❍ /tgm :Get Telegraph Link Of Replied Media
  ❍ /tgt :Get Telegraph Link of Replied Text
  ❍ /tgt [custom name]: Get telegraph link of replied text with custom name.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "T-Gʀᴀᴘʜ"

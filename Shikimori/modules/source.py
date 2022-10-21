@@ -16,15 +16,13 @@ ANON = "https://te.legra.ph/file/0c13eb00aaba21dd2f541.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
+        caption=f"""**Hey {message.from_user.mention()},\n\nI'm [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
 
-**» ᴍʏ ʙᴀʙʏ :** [I𝗓υɱi 和泉](tg://user?id=1356469075)
-**» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
-**» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
-**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
-**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
-
-**sʜɪᴋɪᴍᴏʀɪ ✘ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**» My Baby :** [I𝗓υɱi 和泉](tg://user?id=5409743649)
+**» Python Version :** `{y()}`
+**» Library Version  :** `{o}` 
+**» Telethon Version  :** `{s}` 
+**» Pyrogram Version :** `{z}`
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -34,7 +32,7 @@ async def repo(client, message):
                     ),
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/AL3X-Github",
+                        url="https://t.me/+vBu5aXlocTkwNGM1",
                     ),
                 ]
             ]

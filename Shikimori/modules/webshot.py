@@ -81,5 +81,8 @@ async def take_ss(_, message: Message):
 
 __help__ = """
 » /webss *:* Sends the screenshot of the given url.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 __mod_name__ = "Wᴇʙsʜᴏᴛ​​"

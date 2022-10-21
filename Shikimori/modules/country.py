@@ -110,9 +110,12 @@ async def msg(event):
 
 
 __help__ = """
-I will give information about a country
+I Will Give Information About A Country
 
- ❍ /country <country name>*:* Gathering info about given country
+ ❍ /country <country name>*:* Gathering Info About Given Country.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Cᴏᴜɴᴛʀʏ"

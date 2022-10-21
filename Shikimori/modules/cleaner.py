@@ -78,25 +78,25 @@ def set_blue_text_must_click(update: Update, context: CallbackContext):
         val = args[0].lower()
         if val in ("off", "no"):
             sql.set_cleanbt(chat.id, False)
-            reply = "Bluetext cleaning has been disabled for <b>{}</b>".format(
+            reply = "Bluetext Cleaning Has Been Disabled For <b>{}</b>".format(
                 html.escape(chat.title)
             )
             message.reply_text(reply, parse_mode=ParseMode.HTML)
 
         elif val in ("yes", "on"):
             sql.set_cleanbt(chat.id, True)
-            reply = "Bluetext cleaning has been enabled for <b>{}</b>".format(
+            reply = "Bluetext Cleaning Has Been Enabled For <b>{}</b>".format(
                 html.escape(chat.title)
             )
             message.reply_text(reply, parse_mode=ParseMode.HTML)
 
         else:
-            reply = "Invalid argument.Accepted values are 'yes', 'on', 'no', 'off'"
+            reply = "Invalid Argument. Accepted Values Are 'yes', 'on', 'no', 'off'"
             message.reply_text(reply)
     else:
         clean_status = sql.is_enabled(chat.id)
         clean_status = "Enabled" if clean_status else "Disabled"
-        reply = "Bluetext cleaning for <b>{}</b> : <b>{}</b>".format(
+        reply = "Bluetext Cleaning For <b>{}</b> : <b>{}</b>".format(
             html.escape(chat.title), clean_status
         )
         message.reply_text(reply, parse_mode=ParseMode.HTML)
@@ -112,15 +112,15 @@ def add_bluetext_ignore(update: Update, context: CallbackContext):
         val = args[0].lower()
         added = sql.chat_ignore_command(chat.id, val)
         if added:
-            reply = "<b>{}</b> has been added to bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> Has Been Added To Bluetext Cleaner Ignore List.".format(
                 args[0]
             )
         else:
-            reply = "Command is already ignored."
+            reply = "Command Is Already Ignored."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be ignored."
+        reply = "No Command Supplied To Be Ignored."
         message.reply_text(reply)
 
 
@@ -135,16 +135,16 @@ def remove_bluetext_ignore(update: Update, context: CallbackContext):
         removed = sql.chat_unignore_command(chat.id, val)
         if removed:
             reply = (
-                "<b>{}</b> has been removed from bluetext cleaner ignore list.".format(
+                "<b>{}</b> Has Been Removed From Bluetext Cleaner Ignore List.".format(
                     args[0]
                 )
             )
         else:
-            reply = "Command isn't ignored currently."
+            reply = "Command Isn't Ignored Currently."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be unignored."
+        reply = "No Command supplied To Be Unignored."
         message.reply_text(reply)
 
 
@@ -157,15 +157,15 @@ def add_bluetext_ignore_global(update: Update, context: CallbackContext):
         val = args[0].lower()
         added = sql.global_ignore_command(val)
         if added:
-            reply = "<b>{}</b> has been added to global bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> Has Been Added To Global Bluetext Cleaner Ignore List.".format(
                 args[0]
             )
         else:
-            reply = "Command is already ignored."
+            reply = "Command Is Already Ignores."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be ignored."
+        reply = "No Command Supplied To Be Ignored."
         message.reply_text(reply)
 
 
@@ -178,15 +178,15 @@ def remove_bluetext_ignore_global(update: Update, context: CallbackContext):
         val = args[0].lower()
         removed = sql.global_unignore_command(val)
         if removed:
-            reply = "<b>{}</b> has been removed from global bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> Has Been Removed From Global Bluetext Cleaner Ignore List.".format(
                 args[0]
             )
         else:
-            reply = "Command isn't ignored currently."
+            reply = "Command Isn't Ignored Currently."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be unignored."
+        reply = "No Command Supplied To Be Unignored."
         message.reply_text(reply)
 
 
@@ -201,19 +201,19 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
     text = ""
 
     if global_ignored_list:
-        text = "The following commands are currently ignored globally from bluetext cleaning :\n"
+        text = "The Following Commands Are Currently Ignored Globally From Bluetext Cleaning :\n"
 
         for x in global_ignored_list:
             text += f" - <code>{x}</code>\n"
 
     if local_ignore_list:
-        text += "\nThe following commands are currently ignored locally from bluetext cleaning :\n"
+        text += "\nThe Following Commands Are Currently Ignored Locally From Bluetext Cleaning :\n"
 
         for x in local_ignore_list:
             text += f" - <code>{x}</code>\n"
 
     if text == "":
-        text = "No commands are currently ignored from bluetext cleaning."
+        text = "No Commands Are Currently Ignored From Bluetext Cleaning."
         message.reply_text(text)
         return
 
@@ -222,11 +222,15 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
 
 
 __help__ = """
-*Blue text cleaner* removed any made up commands that people send in your chat.
+𝗕𝘂𝗹𝗲 𝗧𝗲𝘅𝘁 𝗖𝗹𝗲𝗮𝗻𝗲𝗿 Removed Any Made Up Commands That People Send In Your Chat.
+
  ❍ /cleanblue <on/off/yes/no>*:* clean commands after sending
  ❍ /ignoreblue <word>*:* prevent auto cleaning of the command
  ❍ /unignoreblue <word>*:* remove prevent auto cleaning of the command
  ❍ /listblue*:* list currently whitelisted commands
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click)

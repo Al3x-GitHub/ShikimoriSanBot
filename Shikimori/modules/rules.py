@@ -159,6 +159,9 @@ __help__ = """
 *Admins only:*
  ‣ `/setrules <your rules here>`*:* set the rules for this chat.
  ‣ `/clearrules`*:* clear the rules for this chat.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Rᴜʟᴇs"

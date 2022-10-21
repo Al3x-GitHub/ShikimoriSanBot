@@ -274,7 +274,7 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "fallen.png"
+        fname = "shikimori.png"
         img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,
@@ -307,7 +307,7 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "fallen.png"
+        fname = "shikimori.png"
         img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,
@@ -325,4 +325,7 @@ __help__ = """
 I can create some beautiful and attractive logo for your profile pics.
 
 ❍ /logo (Text) *:* Create a logo of your given text with random view.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """

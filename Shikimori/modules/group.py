@@ -4,6 +4,9 @@ __help__ = """
  ❍ /delgpic*:* Same as above but to remove group profile pic.
  ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!
  ❍ /setdescription <description>*:* Sets new chat description in group.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Gʀᴏᴜᴘ"

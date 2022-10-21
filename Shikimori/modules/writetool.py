@@ -63,4 +63,7 @@ __help__ = """
  Writes the given text on white page with a pen 🖊
 
 ❍ /write <text> *:* Writes the given text.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
  """

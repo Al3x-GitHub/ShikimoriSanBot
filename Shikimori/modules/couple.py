@@ -73,9 +73,12 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 
 
 __help__ = """
-Choose couples in your chat
+𝗖𝗵𝗼𝗼𝘀𝗲 𝗖𝗼𝘂𝗽𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁.
 
- ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
+ ❍ /couple *:* Choose 2 Users And Send Their Name As Couples In Your Chat.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Cᴏᴜᴘʟᴇ​"

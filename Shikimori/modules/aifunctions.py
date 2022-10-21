@@ -7,7 +7,7 @@ from Shikimori import telethn
 from Shikimori.events import register
 
 
-@register(pattern="Fallen (.*)")
+@register(pattern="Shikimori San (.*)")
 async def hmm(event):
     test = event.pattern_match.group(1)
     r = ('\n    "consent": true,\n    "ip": "::1",\n    "question": "{}"\n').format(
@@ -28,7 +28,7 @@ async def hmm(event):
     lodu = response.json()
     result = lodu["message"]["text"]
     if "no no" in result:
-        pro = "I am fairly found and I was made by @anonymous_was_bot."
+        pro = "I Am Fairly Found And I Was Made By @MaximXRobot."
         try:
             async with telethn.action(event.chat_id, "typing"):
                 await asyncio.sleep(2)
@@ -36,7 +36,7 @@ async def hmm(event):
         except CFError as e:
             print(e)
     elif "ann" in result:
-        pro = "My name is Fallen"
+        pro = "My Name Is Shikimori San And My Baby @MaximXRobot"
         try:
             async with telethn.action(event.chat_id, "typing"):
                 await asyncio.sleep(2)

@@ -38,11 +38,11 @@ PHOTO = [
 
 @register(pattern=("/alive"))
 async def awake(event):
-    TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ {dispatcher.bot.first_name}**\n━━━━━━━━━━━━━━━━━━━\n\n"
-    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝗦𝗵𝗶𝗸𝗶𝗺𝗼𝗿𝗶](https://t.me/{OWNER_USERNAME})** \n\n"
-    TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
-    TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
-    TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
+    TEXT = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nI'm {dispatcher.bot.first_name}**\n━━━━━━━━━━━━━━━━━━━\n\n"
+    TEXT += f"» **My Baby : [I𝗓υɱi 和泉](https://t.me/{OWNER_USERNAME})** \n\n"
+    TEXT += f"» **Library Version :** `{telever}` \n\n"
+    TEXT += f"» **Telethon Version :** `{tlhver}` \n\n"
+    TEXT += f"» **Pyrogram Version :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
     BUTTON = [
         [
             Button.url("ʜᴇʟᴘ​", f"https://t.me/{dispatcher.bot.username}?start=help"),

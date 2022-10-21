@@ -552,11 +552,11 @@ def devlist(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-*⚠️ Notice:*
-Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
-Group admins/group owners do not need these commands. 
+*⚠️ 𝗡𝗼𝘁𝗶𝗰𝗲:*
+Commands Listed Here Only Work For Users With Special Access Are Mainly Used for Troubleshooting, Debugging Purposes.
+Group Admins/Group Owners Do Not Need These Commands. 
 
-*List all special users:*
+- 𝗟𝗶𝘀𝘁 𝗔𝗹𝗹 𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗨𝘀𝗲𝗿𝘀
  ❍ /dragons*:* Lists all Dragon disasters
  ❍ /demons*:* Lists all Demon disasters
  ❍ /tigers*:* Lists all Tigers disasters
@@ -568,52 +568,52 @@ Group admins/group owners do not need these commands.
  ❍ /addwolf*:* Adds a user to Wolf
  ❍ `Add dev doesnt exist, devs should know how to add themselves`
 
-*Ping:*
+- 𝗣𝗶𝗻𝗴
  ❍ /ping*:* gets ping time of bot to telegram server
  ❍ /pingall*:* gets all listed ping times
 
-*Broadcast: (Bot owner only)*
+- 𝗕𝗿𝗼𝗮𝗱𝗰𝗮𝘀𝘁 *(Bot owner only)*
 *Note:* This supports basic markdown
  ❍ /broadcastall*:* Broadcasts everywhere
  ❍ /broadcastusers*:* Broadcasts too all users
  ❍ /broadcastgroups*:* Broadcasts too all groups
 
-*Groups Info:*
+- 𝗚𝗿𝗼𝘂𝗽𝘀 𝗜𝗻𝗳𝗼
  ❍ /groups*:* List the groups with Name, ID, members count as a txt
  ❍ /leave <ID>*:* Leave the group, ID must have hyphen
  ❍ /stats*:* Shows overall bot stats
  ❍ /getchats*:* Gets a list of group names the user has been seen in. Bot owner only
  ❍ /ginfo username/link/ID*:* Pulls info panel for entire group
 
-*Access control:* 
+- 𝗔𝗰𝗰𝗲𝘀𝘀 𝗖𝗼𝗻𝘁𝗿𝗼𝗹
  ❍ /ignore*:* Blacklists a user from using the bot entirely
  ❍ /lockdown <off/on>*:* Toggles bot adding to groups
  ❍ /notice*:* Removes user from blacklist
  ❍ /ignoredlist*:* Lists ignored users
 
-*Speedtest:*
+- 𝗦𝗽𝗲𝗲𝗱𝗧𝗲𝘀𝘁
  ❍ /speedtest*:* Runs a speedtest and gives you 2 options to choose from, text or image output
 
-*Module loading:*
+- 𝗠𝗼𝗱𝘂𝗹𝗲 𝗟𝗼𝗮𝗱𝗶𝗻𝗴
  ❍ /listmodules*:* Lists names of all modules
  ❍ /load modulename*:* Loads the said module to memory without restarting.
  ❍ /unload modulename*:* Loads the said module frommemory without restarting memory without restarting the bot 
 
-*Remote commands:*
+- 𝗥𝗲𝗺𝗼𝘁𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
  ❍ /rban*:* user group*:* Remote ban
  ❍ /runban*:* user group*:* Remote un-ban
  ❍ /rpunch*:* user group*:* Remote punch
  ❍ /rmute*:* user group*:* Remote mute
  ❍ /runmute*:* user group*:* Remote un-mute
 
-*Windows self hosted only:*
+- 𝗪𝗶𝗻𝗱𝗼𝘄𝘀 𝗦𝗲𝗹𝗳 𝗛𝗼𝘁𝗲𝘀𝗱 𝗢𝗻𝗹𝘆
  ❍ /reboot*:* Restarts the bots service
  ❍ /gitpull*:* Pulls the repo and then restarts the bots service
 
-*Chatbot:* 
+- 𝗖𝗵𝗮𝘁𝗕𝗼𝘁
  ❍ /listaichats*:* Lists the chats the chatmode is enabled in
  
-*Debugging and Shell:* 
+- 𝗗𝗲𝗯𝘂𝗴𝗴𝗶𝗯𝗴 𝗔𝗻𝗱 𝗦𝗵𝗲𝗹𝗹
  ❍ /debug <on/off>*:* Logs commands to updates.txt
  ❍ /logs*:* Run this in support group to get logs in pm
  ❍ /eval*:* Self explanatory
@@ -623,21 +623,21 @@ Group admins/group owners do not need these commands.
  ❍ /dbcleanup*:* Removes deleted accs and groups from db
  ❍ /py*:* Runs python code
  
-*Global Bans:*
+- 𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗮𝗻𝘀
  ❍ /gban <id> <reason>*:* Gbans the user, works by reply too
  ❍ /ungban*:* Ungbans the user, same usage as gban
  ❍ /gbanlist*:* Outputs a list of gbanned users
 
-*Global Blue Text*
+- 𝗚𝗹𝗼𝗯𝗮𝗹 𝗕𝗹𝘂𝗲 𝗧𝗲𝘅𝘁
  ❍ /gignoreblue*:* <word>*:* Globally ignore bluetext cleaning of saved word across Anonymous Robot.
  ❍ /ungignoreblue*:* <word>*:* Remove said command from global cleaning list
 
-*Masha Core*
+- 𝗠𝗮𝘀𝗵𝗮 𝗖𝗼𝗿𝗲
 *Owner only*
  ❍ /send*:* <module name>*:* Send module
  ❍ /install*:* <reply to a .py>*:* Install module 
 
-*Heroku Settings*
+- 𝗛𝗲𝗿𝗼𝗸𝘂 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀
 *Owner only*
  ❍ /usage*:* Check your heroku dyno hours remaining.
  ❍ /see var <var>*:* Get your existing varibles, use it only on your private group!
@@ -645,8 +645,11 @@ Group admins/group owners do not need these commands.
  ❍ /del var <var>*:* Delete existing variable.
  ❍ /logs Get heroku dyno logs.
 
-`⚠️ Read from top`
-Visit @{SUPPORT_CHAT} for more information.
+- 𝗥𝗲𝗮𝗱 𝗙𝗼𝗿𝗺 𝗧𝗼
+Visit @{SUPPORT_CHAT} For More Information.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 SUDO_HANDLER = CommandHandler(("addsudo", "adddragon"), addsudo)
@@ -679,7 +682,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "Devs​"
+__mod_name__ = "Dᴇᴠs​"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,

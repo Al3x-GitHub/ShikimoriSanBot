@@ -11,6 +11,9 @@ __help__ = """
 I will give information about github profile 
 
  ❍ /github <username>*:* Get information about a GitHub user.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 

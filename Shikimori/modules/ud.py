@@ -26,6 +26,9 @@ dispatcher.add_handler(UD_HANDLER)
 
 __help__ = """
 » /ud (text) *:* Searchs the given text on Urban Dictionary and sends you the information.
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 __mod_name__ = "Uʀʙᴀɴ D"
 __command_list__ = ["ud"]

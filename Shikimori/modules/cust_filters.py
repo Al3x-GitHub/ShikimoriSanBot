@@ -609,7 +609,8 @@ def __chat_settings__(chat_id, user_id):
 __help__ = """
  ❍ /filters*:* List all active filters saved in the chat.
 
-*Admin only:*
+*𝗢𝗻𝗹𝘆 𝗔𝗱𝗺𝗶𝗻𝘀*
+
  ❍ /filter <keyword> <reply message>*:* Add a filter to this chat. The bot will now reply that message whenever 'keyword'\
 is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker. NOTE: all filter \
 keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg: /filter "hey there" How you \
@@ -618,18 +619,21 @@ doin?
  *Example:* 
  `/filter "filtername"
  Reply 1
- %%%
+ Izumi
  Reply 2
- %%%
+ Shikimori San
  Reply 3`
  ❍ /stop <filter keyword>*:* Stop that filter.
 
-*Chat creator only:*
+𝗖𝗵𝗮𝘁 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗢𝗻𝗹𝘆:
+
  ❍ /removeallfilters*:* Remove all chat filters at once.
 
-*Note*: Filters also support markdown formatters like: {first}, {last} etc.. and buttons.
+𝗡𝗼𝘁𝗲: Filters also support markdown formatters like: {first}, {last} etc.. and buttons.
 Check ❍ /markdownhelp to know more!
 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Fɪʟᴛᴇʀs"

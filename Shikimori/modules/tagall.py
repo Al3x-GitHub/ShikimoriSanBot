@@ -99,7 +99,10 @@ async def cancel_spam(event):
 
 __mod_name__ = "Tᴀɢ Aʟʟ​"
 __help__ = """
-──「 Only for Admins 」──
+𝗢𝗻𝗹𝘆 𝗔𝗱𝗺𝗶𝗻𝘀:
 
 ❍ /tagall or @all '(reply to message or add another message) To mention all members in your group, without exception.'
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """

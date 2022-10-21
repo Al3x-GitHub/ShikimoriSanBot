@@ -1,4 +1,4 @@
-# Module to blacklist users and prevent them from using commands by @TheRealPhoenix
+# Module to blacklist users and prevent them from using commands by @PN_REX
 import html
 
 from telegram import ParseMode, Update
@@ -29,30 +29,30 @@ def bl_user(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("I Doubt That's A User.")
         return ""
 
     if user_id == bot.id:
-        message.reply_text("How am I supposed to do my work if I am ignoring myself?")
+        message.reply_text("How I'm Supposed To Do My Work If I'm Ignoring Myself?")
         return ""
 
     if user_id in BLACKLISTWHITELIST:
-        message.reply_text("No!\nNoticing Disasters is my job.")
+        message.reply_text("No!\nNoticing Disasters Is My Job.")
         return ""
 
     try:
         target_user = bot.get_chat(user_id)
     except BadRequest as excp:
-        if excp.message == "User not found":
-            message.reply_text("I can't seem to find this user.")
+        if excp.message == "User Not Found":
+            message.reply_text("I Can't Seem To Find This User.")
             return ""
         else:
             raise
 
     sql.blacklist_user(user_id, reason)
-    message.reply_text("I shall ignore the existence of this user!")
+    message.reply_text("I Shall Ignore The Existence Of This User!")
     log_message = (
-        f"#BLACKLIST\n"
+        f"#Blacklist\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
         f"<b>User:</b> {mention_html(target_user.id, html.escape(target_user.first_name))}"
     )
@@ -72,18 +72,18 @@ def unbl_user(update: Update, context: CallbackContext) -> str:
     user_id = extract_user(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("I Doubt That's A User.")
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I always notice myself.")
+        message.reply_text("I Always Notice Myself.")
         return ""
 
     try:
         target_user = bot.get_chat(user_id)
     except BadRequest as excp:
-        if excp.message == "User not found":
-            message.reply_text("I can't seem to find this user.")
+        if excp.message == "User Not Found":
+            message.reply_text("I Can't Seem To Find This User.")
             return ""
         else:
             raise
@@ -93,7 +93,7 @@ def unbl_user(update: Update, context: CallbackContext) -> str:
         sql.unblacklist_user(user_id)
         message.reply_text("*notices user*")
         log_message = (
-            f"#UNBLACKLIST\n"
+            f"#Unblacklist\n"
             f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             f"<b>User:</b> {mention_html(target_user.id, html.escape(target_user.first_name))}"
         )
@@ -101,7 +101,7 @@ def unbl_user(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("I am not ignoring them at all though!")
+        message.reply_text("I'm Not Ignoring Them At All thought 😒")
         return ""
 
 
@@ -123,7 +123,7 @@ def bl_users(update: Update, context: CallbackContext):
 
     message = "<b>Blacklisted Users</b>\n"
     if not users:
-        message += "None is being ignored as of yet."
+        message += "None Is Being Ignored As Of Yet."
     else:
         message += "\n".join(users)
 

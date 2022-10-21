@@ -81,9 +81,10 @@ def markdown_help(update: Update, context: CallbackContext):
 
 
 __help__ = """
-*Available commands:*
+- 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀
 *Markdown:*
  ❍ /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
+ 
 *React:*
  ❍ /react*:* Reacts with a random reaction 
 *Urban Dictonary:*
@@ -100,6 +101,8 @@ Example:
  `/cash 1 usd inr`
 Output: `1.0 USD = 75.505 INR`
 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)

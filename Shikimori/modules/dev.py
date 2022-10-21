@@ -18,16 +18,16 @@ from Shikimori.modules.helper_funcs.chat_status import dev_plus
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {Shikimori.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current State: {Shikimori.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
         Shikimori.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
         Shikimori.ALLOW_CHATS = False
     else:
-        update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
+        update.effective_message.reply_text("Format: /Lockdown Yes/No or Off/On")
         return
-    update.effective_message.reply_text("Done! Lockdown value toggled.")
+    update.effective_message.reply_text("Done! Lockdown Value Toggled.")
 
 
 @run_async
@@ -41,24 +41,24 @@ def leave(update: Update, context: CallbackContext):
             bot.leave_chat(int(chat_id))
         except TelegramError:
             update.effective_message.reply_text(
-                "Beep boop, I could not leave that group(dunno why tho)."
+                "Beep Boop, I Could Not Leave That Group."
             )
             return
         with suppress(Unauthorized):
-            update.effective_message.reply_text("Beep boop, I left that soup!.")
+            update.effective_message.reply_text("Beep Boop, I Left That Soup!.")
     else:
-        update.effective_message.reply_text("Send a valid chat ID")
+        update.effective_message.reply_text("Send A Valid Chat ID")
 
 
 @run_async
 @dev_plus
 def gitpull(update: Update, context: CallbackContext):
     sent_msg = update.effective_message.reply_text(
-        "Pulling all changes from remote and then attempting to restart."
+        "Pulling All Changes From Remote And Then Attempting To Restart."
     )
     subprocess.Popen("git pull", stdout=subprocess.PIPE, shell=True)
 
-    sent_msg_text = sent_msg.text + "\n\nChanges pulled...I guess.. Restarting in "
+    sent_msg_text = sent_msg.text + "\n\nChanges Pulled...I Guess.. Restarting In "
 
     for i in reversed(range(5)):
         sent_msg.edit_text(sent_msg_text + str(i + 1))
@@ -74,7 +74,7 @@ def gitpull(update: Update, context: CallbackContext):
 @dev_plus
 def restart(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        "Starting a new instance and shutting down this one"
+        "Starting A New Instance And Shutting Down This One"
     )
 
     os.system("restart.bat")
@@ -91,5 +91,5 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "Dev"
+__mod_name__ = "Dᴇᴠ"
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]

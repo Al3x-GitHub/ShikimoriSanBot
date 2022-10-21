@@ -67,4 +67,7 @@ __help__ = """
  Pastes the given file and shows you the result
 
  ❍ /paste *:* Reply to a text file
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
  """

@@ -180,11 +180,11 @@ def config(client, message):
 
 
 __help__ = """
-  *Force Subscribe:*
+  𝗙𝗼𝗿𝗰𝗲 𝗧𝗼 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲:
 
-  Fallen Robot can mute members who are not subscribed your channel until they subscribe When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+ Shikimori San Robot Can Mute Members Who Are Not Subscribed Your Channel Until They Subscribe When Enabled I Will Mute Unsubscribed Members And Show Them A Unmute Button. When They Pressed The Button I Will Unmute Them.
 
-  *Setup* *:* *Only for chat owner*
+  *𝗦𝗲𝘁𝘂𝗽* *:* *Only for chat owner*
   ❍ Add me in your group as admin
   ❍ Add me in your channel as admin 
     
@@ -199,5 +199,8 @@ __help__ = """
     💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
 
   ❍ /fsub clear *:* To unmute all members who are muted by me for not joining the channel.
+  
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 __mod_name__ = "Fᴏʀᴄᴇ-Sᴜʙ"

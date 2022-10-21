@@ -40,6 +40,9 @@ I can find weather of all cities
 
  ❍ /weather <city>*:* Advanced weather module, usage same as /weather
  ❍ /weather moon*:* Get the current status of moon
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Wᴇᴀᴛʜᴇʀ"

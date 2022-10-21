@@ -80,6 +80,9 @@ __help__ = """
  ❍ /spell*:* while replying to a message, will reply with a grammar corrected version
  ❍ /synonyms <word>*:* Find the synonyms of a word
  ❍ /antonyms <word>*:* Find the antonyms of a word
+
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Eɴɢʟɪsʜ"

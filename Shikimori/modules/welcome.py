@@ -1084,7 +1084,8 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-*Admins only:*
+𝗢𝗻𝗹𝘆 𝗔𝗱𝗺𝗶𝗻𝘀:
+
  ❍ /welcome <on/off>*:* enable/disable welcome messages.
  ❍ /welcome*:* shows current welcome settings.
  ❍ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
@@ -1099,8 +1100,12 @@ __help__ = """
  *Example:*
 user joined chat, user left chat.
 
-*Welcome markdown:* 
+𝗪𝗲𝗹𝗖𝗼𝗺𝗲 𝗠𝗮𝗿𝗱𝗼𝘄𝗻:
+
  ❍ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)

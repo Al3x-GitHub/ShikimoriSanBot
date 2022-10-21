@@ -1,22 +1,22 @@
 RUN_STRINGS = (
-    "Now you see me, now you don't." "ε=ε=ε=ε=┌(;￣▽￣)┘",
-    "Get back here!",
-    "REEEEEEEEEEEEEEEEEE!!!!!!!",
-    "Look out for the wall!",
-    "Don't leave me alone with them!!",
-    "You've got company!",
-    "Chotto matte!",
-    "Yare yare daze",
-    "*Naruto run activated*",
-    "*Nezuko run activated*",
-    "Hey take responsibilty for what you just did!",
-    "May the odds be ever in your favour.",
-    "Run everyone, they just dropped a bomb 💣💣",
-    "And they disappeared forever, never to be seen again.",
-    "Legend has it, they're still running.",
-    "Hasta la vista, baby.",
-    "Ah, what a waste. I liked that one.",
-    "As The Doctor would say... RUN!",
+    "Now You See Me, Now You Don't." "ε=ε=ε=ε=┌(;￣▽￣)┘",
+    "Get Back Here!",
+    "Noooooooob..",
+    "Look Out For The Wall!",
+    "Don't Leave Me Alone With Them!!",
+    "You've Got Company!",
+    "Chotto Matte!",
+    "Yare Yare Daze",
+    "*Naruto Run Activated*",
+    "*Nezuko Run Activated*",
+    "Hey Take Responsibilty For What You Just Did!",
+    "May The Odds Be Ever In Your Favour.",
+    "Run Everyone, They Just Dropped A Bomb 💣💣",
+    "And They Disappeared Forever, Never To Be Seem Again.",
+    "Legend Has It, They're Still Running.",
+    "😂🤣😂🤣😂🤣😂",
+    "Ah, What A Waste. I Liked That One.",
+    "As The Doctor Would Say... RUN!",
 )
 
 GIFS = [
@@ -26,11 +26,11 @@ GIFS = [
 ]
 
 SLAP_FALLEN_TEMPLATES = (
-    "Slap me one more time and I'll mute you.",
-    "Stop slapping me. REEEEEEEEEEEEEE.",
+    "Slap Me One More Time And I'll Mute You.",
+    "Stop Slapping Me.",
     [
-        "I am muting you for a minute.",  # normal reply
-        "Stop slapping me just because I can't mute you. REEEEEEEEEE.",  # reply to admin
+        "I Am Muting You For A Minute.",  # normal reply
+        "Stop Slapping Me Just Because I Can't Mute You.",  # reply to admin
         "tmute",  # command
         "Shut up!",
         "Silence!",
@@ -38,21 +38,21 @@ SLAP_FALLEN_TEMPLATES = (
 )
 
 SLAP_TEMPLATES = (
-    "{user2} was killed by magic.",
-    "{user2} starved without pats.",
-    "{user2} was knocked into the void by {user1}.",
-    "{user2} fainted.",
-    "{user2} is out of usable Pokemon! {user2} whited out!.",
-    "{user2} is out of usable Pokemon! {user2} blacked out!.",
-    "{user2} got rekt.",
-    "{user2}'s melon was split by {user1}.",
-    "{user2} was sliced and diced by {user1}.",
-    "{user2} played hot-potato with a grenade.",
-    "{user2} was knifed by {user1}.",
-    "{user2} ate a grenade.",
-    "{user2} is what's for dinner!",
-    "{user2} was terminated by {user1}.",
-    "{user1} spammed {user2}'s email.",
+    "{user2} Was Killed By Magic.",
+    "{user2} Starved Without Pats.",
+    "{user2} Was Knocked Into The Void By {user1}.",
+    "{user2} Fainted.",
+    "{user2} Is Out Of Usable Pokemon! {user2} Whited Out!.",
+    "{user2} Is Out Of Usable Pokemon! {user2} Blacked Out!.",
+    "{user2} Got Rekt.",
+    "{user2}'s Melon Was Split By {user1}.",
+    "{user2} Was Sliced And Diced By {user1}.",
+    "{user2} Played Hot-potato With A Grenade.",
+    "{user2} Was Knifed By {user1}.",
+    "{user2} Ate A Grenade.",
+    "{user2} Is What's For Dinner!",
+    "{user2} Was Terminated By {user1}.",
+    "{user1} Spammed {user2}'s Email.",
     "{user1} RSA-encrypted {user2} and deleted the private key.",
     "{user1} put {user2} in the friendzone.",
     "{user1} slaps {user2} with a DMCA takedown request!",
@@ -192,7 +192,7 @@ PAT_STICKERS = (
     "CAACAgQAAxkBAALRXF9Xs6XmIeDbnoL1wiDky0TdX-CvAAKKAQAC1TMzC9A3CtiT2rqVGwQ",
 )
 
-PING_STRING = ("ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤",)
+PING_STRING = ("I'm Alive [I𝗓υɱi 和泉](https://t.me/MaximXRobot) Baby 💋",)
 
 ITEMS = (
     "cast iron skillet",

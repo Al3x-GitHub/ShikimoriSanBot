@@ -36,9 +36,12 @@ async def _(event):
 
 
 __help__ = """
-Sends you the gps location of the given query...
+Sends You The Gps Location Of The Given Query.
 
  ❍ /gps <location>*:* Get gps location.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 __mod_name__ = "Gᴘs"

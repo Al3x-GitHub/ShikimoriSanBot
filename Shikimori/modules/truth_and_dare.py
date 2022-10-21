@@ -27,5 +27,8 @@ __help__ = """
 *Truth & Dare*
  ❍ /truth *:* Sends a random truth string.
  ❍ /dare *:* Sends a random dare string.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 __mod_name__ = "Tʀᴜᴛʜ-Dᴀʀᴇ"

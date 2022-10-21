@@ -241,10 +241,14 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
 
 
 __help__ = """
-*Admins only:*
+*𝗢𝗻𝗹𝘆𝘃𝗔𝗱𝗺𝗶𝗻
+
  ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
  ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
  ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+ 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 MUTE_HANDLER = CommandHandler("mute", mute)

@@ -41,7 +41,7 @@ def import_data(update, context):
         chat_name = dispatcher.bot.getChat(conn).title
     else:
         if update.effective_message.chat.type == "private":
-            update.effective_message.reply_text("This is a group only command!")
+            update.effective_message.reply_text("This Is A Group Only Command!")
             return ""
 
         chat = update.effective_chat
@@ -52,7 +52,7 @@ def import_data(update, context):
             file_info = context.bot.get_file(msg.reply_to_message.document.file_id)
         except BadRequest:
             msg.reply_text(
-                "Try downloading and uploading the file yourself again, This one seem broken to me!"
+                "Try Downloading And Uploading The File Yourself Again, This One Seem Broken To Me!"
             )
             return
 
@@ -64,7 +64,7 @@ def import_data(update, context):
         # only import one group
         if len(data) > 1 and str(chat.id) not in data:
             msg.reply_text(
-                "There are more than one group in this file and the chat.id is not same! How am i supposed to import it?"
+                "There Are More Than One Group In This File And The chat.id Is Not Same! How I'm  Supposed To Import It?"
             )
             return
 
@@ -72,19 +72,19 @@ def import_data(update, context):
         try:
             if data.get(str(chat.id)) is None:
                 if conn:
-                    text = "Backup comes from another chat, I can't return another chat to chat *{}*".format(
+                    text = "Backup Comes From Another Xhat, I Can't Return Another Chat To Chat *{}*".format(
                         chat_name
                     )
                 else:
-                    text = "Backup comes from another chat, I can't return another chat to this chat"
+                    text = "Backup Comes From Another Chat, I Can't Return Another Chat To This Chat"
                 return msg.reply_text(text, parse_mode="markdown")
         except Exception:
-            return msg.reply_text("There was a problem while importing the data!")
+            return msg.reply_text("There Was A Problem While Importing The Data!")
         # Check if backup is from self
         try:
             if str(context.bot.id) != str(data[str(chat.id)]["bot"]):
                 return msg.reply_text(
-                    "Backup from another bot that is not suggested might cause the problem, documents, photos, videos, audios, records might not work as it should be."
+                    "Backup From Another Bot That Is Not Suggested Might Cause The Problem, Document's, Photo's, Video's, Audio's, Record's Might Not Work As It Should Be."
                 )
         except Exception:
             pass
@@ -99,7 +99,7 @@ def import_data(update, context):
                 mod.__import_data__(str(chat.id), data)
         except Exception:
             msg.reply_text(
-                f"An error occurred while recovering your data. The process failed. If you experience a problem with this, please take it to @{SUPPORT_CHAT}"
+                f"An Error Occurred While Recovering Your Data. The Process Failed. If You Experience A Problem With This, Please Take It To @{SUPPORT_CHAT}"
             )
 
             LOGGER.exception(
@@ -113,9 +113,9 @@ def import_data(update, context):
         # NOTE: consider default permissions stuff?
         if conn:
 
-            text = "Backup fully restored on *{}*.".format(chat_name)
+            text = "Backup Successfully Restored On *{}*.".format(chat_name)
         else:
-            text = "Backup fully restored"
+            text = "Backup Fully Restored"
         msg.reply_text(text, parse_mode="markdown")
 
 
@@ -135,7 +135,7 @@ def export_data(update, context):
         # chat_name = dispatcher.bot.getChat(conn).title
     else:
         if update.effective_message.chat.type == "private":
-            update.effective_message.reply_text("This is a group only command!")
+            update.effective_message.reply_text("This Is A Group Only Commands!")
             return ""
         chat = update.effective_chat
         chat_id = update.effective_chat.id
@@ -150,7 +150,7 @@ def export_data(update, context):
                 "%H:%M:%S %d/%m/%Y", time.localtime(checkchat.get("value"))
             )
             update.effective_message.reply_text(
-                "You can only backup once a day!\nYou can backup again in about `{}`".format(
+                "You Can Only Backup Once A Day!\nYou Can Backup Again In About `{}`".format(
                     timeformatt
                 ),
                 parse_mode=ParseMode.MARKDOWN,
@@ -333,7 +333,7 @@ def export_data(update, context):
     try:
         context.bot.sendMessage(
             JOIN_LOGGER,
-            "*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`".format(
+            "*Successfully Imported Backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`".format(
                 chat.title, chat_id, tgl
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -343,7 +343,7 @@ def export_data(update, context):
     context.bot.sendDocument(
         current_chat_id,
         document=open("Shikimori{}.backup".format(chat_id), "rb"),
-        caption="📤*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Shikimori-Backup` was specially made for notes 📚.".format(
+        caption="📤*Successfully Exported Backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `Shikimori-Backup` Was Specially Made For Notes 📚.".format(
             chat.title, chat_id, tgl
         ),
         timeout=360,
@@ -371,13 +371,15 @@ def get_chat(chat_id, chat_data):
 __mod_name__ = "Bᴀᴄᴋᴜᴘ"
 
 __help__ = """
-*Only for group owner:*
+𝗢𝗻𝗹𝘆 𝗙𝗼𝗿 𝗚𝗿𝗼𝘂𝗽 𝗢𝘄𝗻𝗲𝗿:
 
  ❍ /import: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
  Note that files / photos cannot be imported due to telegram restrictions.
 
  ❍ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
 
+❏ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆
+┗ @MaximXRobot
 """
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
