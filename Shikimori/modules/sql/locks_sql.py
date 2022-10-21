@@ -49,7 +49,7 @@ class Permissions(BASE):
         self.inline = False
 
     def __repr__(self):
-        return "<Permissions for %s>" % self.chat_id
+        return "<Permissions For %s>" % self.chat_id
 
 
 class Restrictions(BASE):
@@ -69,7 +69,7 @@ class Restrictions(BASE):
         self.preview = False
 
     def __repr__(self):
-        return "<Restrictions for %s>" % self.chat_id
+        return "<Restrictions For %s>" % self.chat_id
 
 
 # For those who faced database error, Just uncomment the

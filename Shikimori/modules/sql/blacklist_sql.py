@@ -15,7 +15,7 @@ class BlackListFilters(BASE):
         self.trigger = trigger
 
     def __repr__(self):
-        return "<Blacklist filter '%s' for %s>" % (self.trigger, self.chat_id)
+        return "<Blacklist Filter '%s' For %s>" % (self.trigger, self.chat_id
 
     def __eq__(self, other):
         return bool(
@@ -37,7 +37,7 @@ class BlacklistSettings(BASE):
         self.value = value
 
     def __repr__(self):
-        return "<{} will executing {} for blacklist trigger.>".format(
+        return "<{} Will Executing {} For Blacklist Trigger.>".format(
             self.chat_id, self.blacklist_type
         )
 

@@ -15,7 +15,7 @@ class CleanerBlueTextChatSettings(BASE):
         self.is_enable = is_enable
 
     def __repr__(self):
-        return "clean blue text for {}".format(self.chat_id)
+        return "Clean Blue Text For {}".format(self.chat_id)
 
 
 class CleanerBlueTextChat(BASE):

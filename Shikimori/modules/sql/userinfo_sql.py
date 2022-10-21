@@ -15,7 +15,7 @@ class UserInfo(BASE):
         self.info = info
 
     def __repr__(self):
-        return "<User info %d>" % self.user_id
+        return "<User Info %d>" % self.user_id
 
 
 class UserBio(BASE):
@@ -28,7 +28,7 @@ class UserBio(BASE):
         self.bio = bio
 
     def __repr__(self):
-        return "<User info %d>" % self.user_id
+        return "<User Info %d>" % self.user_id
 
 
 UserInfo.__table__.create(checkfirst=True)

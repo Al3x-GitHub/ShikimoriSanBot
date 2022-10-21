@@ -14,7 +14,7 @@ class Rules(BASE):
         self.chat_id = chat_id
 
     def __repr__(self):
-        return "<Chat {} rules: {}>".format(self.chat_id, self.rules)
+        return "<Chat {} Rules: {}>".format(self.chat_id, self.rules)
 
 
 Rules.__table__.create(checkfirst=True)

@@ -61,7 +61,7 @@ class ChatMembers(BASE):
         self.user = user
 
     def __repr__(self):
-        return "<Chat user {} ({}) in chat {} ({})>".format(
+        return "<Chat User {} ({}) In Chat {} ({})>".format(
             self.user.username,
             self.user.user_id,
             self.chat.chat_name,

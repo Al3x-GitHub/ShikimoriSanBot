@@ -7,15 +7,15 @@ from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 from Shikimori.modules.helper_funcs.msg_types import Types
 from Shikimori.modules.sql import BASE, SESSION
 
-DEFAULT_WELCOME = "Hey {first}, how are you?"
+DEFAULT_WELCOME = "Hey {first}, How atre You?"
 DEFAULT_GOODBYE = "Nice knowing ya!"
 
 DEFAULT_WELCOME_MESSAGES = [
-    "{first} is here!",
-    "Ready player {first}",
-    "Genos, {first} is here.",
-    "A wild {first} appeared.",
-    "{first} came in like a Lion!",
+    "{first} Is Here!",
+    "Ready Player {first}",
+    "Genos, {first} isi Here.",
+    "A Wild {first} Appeared.",
+    "{first} Come In Like A Lion!",
     "{first} has joined your party.",
     "Arre dekho dekho koun aaya\n{first} aaya {first} aaya",
     "{first} just joined. Can I get a heal?",
@@ -250,7 +250,7 @@ class Welcome(BASE):
         self.should_goodbye = should_goodbye
 
     def __repr__(self):
-        return "<Chat {} should Welcome new users: {}>".format(
+        return "<Chat {} Should Welcome New Users: {}>".format(
             self.chat_id, self.should_welcome
         )
 
@@ -316,7 +316,7 @@ class CleanServiceSetting(BASE):
         self.chat_id = str(chat_id)
 
     def __repr__(self):
-        return "<Chat used clean service ({})>".format(self.chat_id)
+        return "<Chat Used Clean Service ({})>".format(self.chat_id)
 
 
 Welcome.__table__.create(checkfirst=True)

@@ -20,7 +20,7 @@ class FloodControl(BASE):
         self.chat_id = str(chat_id)  # ensure string
 
     def __repr__(self):
-        return "<flood control for %s>" % self.chat_id
+        return "<flood Control For %s>" % self.chat_id
 
 
 class FloodSettings(BASE):
@@ -35,7 +35,7 @@ class FloodSettings(BASE):
         self.value = value
 
     def __repr__(self):
-        return "<{} will executing {} for flood.>".format(self.chat_id, self.flood_type)
+        return "<{} Will Executing {} For Flood.>".format(self.chat_id, self.flood_type)
 
 
 FloodControl.__table__.create(checkfirst=True)

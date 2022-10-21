@@ -11,7 +11,7 @@ if DB_URI and DB_URI.startswith("postgres://"):
 
 def start() -> scoped_session:
     engine = create_engine(DB_URI, client_encoding="utf8")
-    log.info("[PostgreSQL] Connecting to database......")
+    log.info("[PostgreSQL] Connecting To Database...")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
@@ -21,7 +21,7 @@ BASE = declarative_base()
 try:
     SESSION = start()
 except Exception as e:
-    log.exception(f"[PostgreSQL] Failed to connect due to {e}")
+    log.exception(f"[PostgreSQL] Failed To Connect Due To {e}")
     exit()
 
-log.info("[PostgreSQL] Connection successful, session started.")
+log.info("[PostgreSQL] Connection Successful, Session Started.")

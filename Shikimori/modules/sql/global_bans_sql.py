@@ -33,7 +33,7 @@ class GbanSettings(BASE):
         self.setting = enabled
 
     def __repr__(self):
-        return "<Gban setting {} ({})>".format(self.chat_id, self.setting)
+        return "<Gban Setting {} ({})>".format(self.chat_id, self.setting)
 
 
 GloballyBannedUsers.__table__.create(checkfirst=True)
