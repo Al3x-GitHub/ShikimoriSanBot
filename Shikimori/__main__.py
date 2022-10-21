@@ -93,20 +93,20 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ",
+            text="➕ Aᴅᴅ Tᴏ Gʀᴏᴜᴘ ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="• Hᴇʟᴩ & Cᴏᴍᴍᴀɴᴅs •", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="• ᴀʙᴏᴜᴛ •", callback_data="fallen_"),
-        InlineKeyboardButton(text="• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="• Aʙᴏᴜᴛ •", callback_data="fallen_"),
+        InlineKeyboardButton(text="• Sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="• ᴍʏ ʙᴀʙʏ •", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="•️ sᴏᴜʀᴄᴇ •️", callback_data="source_"),
+        InlineKeyboardButton(text="• Mʏ Bᴀʙʏ •", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="•️ Sᴏᴜʀᴄᴇ •️", callback_data="source_"),
     ],
 ]
 
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="I'm Alive [Baby](https://t.me/MaximXRobot) !\n<b>I Didn't Slept Since:</b> <code>{}</code>".format(
+            caption="I'm Alive [Baby](https://t.me/MaximXRobot)💋!\n<b>I Didn't Slept Since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -413,18 +413,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="• Sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="• ᴜᴩᴅᴀᴛᴇs •", url=f"https://t.me/MaximXChannels"
+                            text="• Uᴩᴅᴀᴛᴇs •", url=f"https://t.me/MaximXChannels"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="• ᴍʏ ʙᴀʙʏ •", url=f"https://t.me/MaxiXRobot"
+                            text="• Mʏ Bᴀʙʏ •", url=f"https://t.me/MaxiXRobot"
                         ),
                         InlineKeyboardButton(
-                            text="• ɢɪᴛʜᴜʙ •",
+                            text="• Gɪᴛʜᴜʙ •",
                             callback_data="https://github.com/AL3X-Github",
                         ),
                     ],
@@ -496,7 +496,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ​",
+                                text="Hᴇʟᴘ​",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -512,7 +512,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="Oᴩᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -520,7 +520,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="Oᴩᴇɴ Hᴇʀᴇ",
                             callback_data="help_back",
                         )
                     ],
@@ -690,7 +690,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="sᴇᴛᴛɪɴɢs​",
+                                text="Sᴇᴛᴛɪɴɢs​",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -716,7 +716,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1356469075 and DONATION_LINK:
+        if OWNER_ID != 5409743649 and DONATION_LINK:
             update.effective_message.reply_text(
                 f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {BOT_NAME} sᴏʀᴄᴇ ᴄᴏᴅᴇ ɪs [I𝗓υɱi 和泉](https://t.me/MaximXRobot)."
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
