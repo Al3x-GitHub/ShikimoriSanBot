@@ -81,48 +81,47 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*Hey* {},
 
-*ᴛʜɪs ɪs* {} !
-ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
-──────────────────
-*ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+This Isᴛʜɪs ɪs {} !
+The Most Powerful Telegram Group Management Bot With Some Awesome And Useful Features.
+▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰
+*𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖧𝖾𝗅𝗉 𝖡𝗎𝗍𝗍𝗈𝗇 𝖳𝗈 𝖦𝖾𝗍 𝖨𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖠𝖻𝗈𝗎𝗍 𝖬𝗒 𝖬𝗈𝖽𝗎𝗅𝖾𝗌 𝖠𝗇𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌.*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Tɪ Gʀᴏᴜᴘ",
+            text="𝖠𝖽𝖽 𝖳𝗈 𝖦𝗋𝗈𝗎𝗉",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="Hᴇʟᴩ & Cᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="𝖧𝖾𝗅𝗉 & 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="fallen_"),
-        InlineKeyboardButton(text="Sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="𝖠𝖻𝗈𝗎𝗍", callback_data="fallen_"),
+        InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="Dᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="Sᴏᴜʀᴄᴇ️", callback_data="source_"),
+        InlineKeyboardButton(text="𝖬𝗒 𝖡𝖺𝖻𝗒", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="𝖲𝗈𝗎𝗋𝖼𝖾️", callback_data="source_"),
     ],
 ]
 
 HELP_STRINGS = f"""
-*» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
+» {BOT_NAME} 𝗘𝘅𝗰𝗹𝘂𝘀𝗶𝘃𝗲 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀
 
-➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.
-➲ /donate : sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.
-➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
-  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ."""
+➲ /start : Start Me | According To Me You've Already Done It.
+➲ /donate : No Need.
+➲ /help  : Available Commands Section.
+  ‣ In PM : Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Hᴇʟᴘ​ Fᴏʀ Aʟʟ Sᴜᴘᴘᴏʀᴛᴇᴅ Mᴏᴅᴜʟᴇꜱ.
+  ‣ In Group : Wɪʟʟ Rᴇᴅɪʀᴇᴄᴛ Yᴏᴜ Tᴏ Pᴍ, Wɪᴛʜ Aʟʟ Tʜᴀᴛ Hᴇʟᴘ​ Mᴏᴅᴜʟᴇꜱ."""
 
-DONATE_STRING = """ʜᴇʏ,
-  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
+DONATE_STRING = """Hey,
+  Happy To Hear That You Wanna Donate.
 
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ʙᴀʙʏ](https://t.me/MaximXRobot) ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](https://t.me/MaximXGroup) ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+You Can Directly Contact My [Baby](https://t.me/MaximXRobot) For Donating Or You Can Visit My [Support Group](https://t.me/MaximXGroup) And Ask There About Donation."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -416,7 +415,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="Sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="Uᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="Uᴩᴅᴀᴛᴇs", url=f"https://t.me/MaximXChannels"
                         ),
                     ],
                     [
@@ -459,7 +458,6 @@ def Source_about_callback(update: Update, context: CallbackContext):
 [ᴩʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
 [ᴩʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ](https://github.com/python-telegram-bot/python-telegram-bot)
 ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
-.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -493,7 +491,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ​",
+                                text="Hᴇʟᴘ​",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -509,7 +507,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="Oᴩᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -517,7 +515,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="Oᴩᴇɴ Hᴇʀᴇ",
                             callback_data="help_back",
                         )
                     ],
@@ -731,7 +729,7 @@ def donate(update: Update, context: CallbackContext):
             )
 
             update.effective_message.reply_text(
-                "I've PM'ed you about donating to my creator!"
+                "I've PM'ed you about donating to my Baby!"
             )
         except Unauthorized:
             update.effective_message.reply_text(
@@ -766,7 +764,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ [ʙᴀʙʏ](https://telegram.dog/MaximXRobot
+ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ [ʙᴀʙʏ](https://telegram.dog/MaximXRobot)
 
 ┏•❅────✧❅✦❅✧────❅•┓
 ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
