@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgEAAxkBAAEE_ftjbTJ7ypt3DUbrZI5BvKMHuPRxtAACtwEAAsEXoUbWXwEsRF-KmSsE"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -766,12 +766,12 @@ def main():
                 caption=f"""
 ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ [ʙᴀʙʏ](https://telegram.dog/MaximXRobot)
 
-┏•❅────✧❅✦❅✧────❅•┓
+┏•┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅•┓
 ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
 ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
 ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
 ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗•❅────✧❅✦❅✧────❅•┛""",
+┗•┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅•┛""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
