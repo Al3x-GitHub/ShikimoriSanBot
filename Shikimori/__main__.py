@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hey* {},
 
-This Isᴛʜɪs ɪs {} !
+This Is ᴛʜɪs ɪs {} !
 The Most Powerful Telegram Group Management Bot With Some Awesome And Useful Features.
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 *𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖧𝖾𝗅𝗉 𝖡𝗎𝗍𝗍𝗈𝗇 𝖳𝗈 𝖦𝖾𝗍 𝖨𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖠𝖻𝗈𝗎𝗍 𝖬𝗒 𝖬𝗈𝖽𝗎𝗅𝖾𝗌 𝖠𝗇𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌.*
