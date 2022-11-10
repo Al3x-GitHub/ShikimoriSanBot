@@ -12,7 +12,7 @@ async def carbon_func(_, message):
         return await message.reply_text("`Reply To A Text To Generat Carbon.`")
     if not message.reply_to_message.text:
         return await message.reply_text("`Reply To A Text To Generate Carbon.`")
-    m = await message.reply_text("😒`Generating Carbo...`")
+    m = await message.reply_text("😒` Generating Carbo...`")
     carbon = await make_carbon(message.reply_to_message.text)
     await m.edit("📤` Uploading Generated Carbon...`")
     await pbot.send_photo(message.chat.id, carbon)
