@@ -34,9 +34,7 @@ def set_sticker(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text(
-            "» You Don't Have Permission To Change Group Info"
-        )
+        return msg.reply_text("» You Don't Have Permission To Change Group Info")
 
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
@@ -54,7 +52,9 @@ def set_sticker(update: Update, context: CallbackContext):
                 )
             msg.reply_text(f"Error404 ! {excp.message}.")
     else:
-        msg.reply_text("» Reply To A Sticker To A Sticker To Set It As Group Sticker Pack")
+        msg.reply_text(
+            "» Reply To A Sticker To A Sticker To Set It As Group Sticker Pack"
+        )
 
 
 @run_async
@@ -122,9 +122,7 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text(
-            "» You Don't Have Permission To Change Info"
-        )
+        return msg.reply_text("» You Don't Have Permission To Change Info")
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
@@ -212,9 +210,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_id == bot.id:
-        message.reply_text(
-            "» I Can't Promote Myself, My Baby Don't Told Me To Do So."
-        )
+        message.reply_text("» I Can't Promote Myself, My Baby Don't Told Me To Do So.")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -298,9 +294,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_id == bot.id:
-        message.reply_text(
-            "» I Cant Promote Myself, My Baby Don't Told Me To Do So."
-        )
+        message.reply_text("» I Cant Promote Myself, My Baby Don't Told Me To Do So.")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -380,9 +374,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_id == bot.id:
-        message.reply_text(
-            "» I Can't Promote My, My Baby Didn't Told Me To Do So."
-        )
+        message.reply_text("» I Can't Promote My, My Baby Didn't Told Me To Do So.")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!

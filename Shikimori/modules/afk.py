@@ -113,7 +113,9 @@ def reply_afk(update: Update, context: CallbackContext):
             try:
                 chat = bot.get_chat(user_id)
             except BadRequest:
-                print("Error404: Could Not Fetch Userid {} For AFK Module".format(user_id))
+                print(
+                    "Error404: Could Not Fetch Userid {} For AFK Module".format(user_id)
+                )
                 return
             fst_name = chat.first_name
 
