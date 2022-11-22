@@ -81,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 <a href=https://telegra.ph/file/82604a7341ba9fa0c716b.mp4>sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ</a> 」────
+────「 [sʜɪᴋɪᴍᴏʀɪ ᴍɪᴄᴄʜᴏɴ](https://telegra.ph/file/82604a7341ba9fa0c716b.mp4) 」────
 やあ Kon'ichiwa {} 
 I'm Shikimori Micchon An Kawaii Advanced Group Management Bot.
 ───────────────────────
