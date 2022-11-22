@@ -22,6 +22,7 @@ hachoir
 heroku3
 html2text
 jikanpy
+lxml
 markdown2
 motor
 nltk
@@ -37,7 +38,7 @@ python-arq
 pyrate-limiter
 pykeyboard
 pynewtonmath
-pyrogram==2.0.57
+pyrogram==2.0.61
 python-telegram-bot==12.8
 regex
 requests
@@ -45,12 +46,12 @@ secureme
 search_engine_parser
 speedtest-cli
 spongemock
-sqlalchemy==1.4.41
+sqlalchemy==1.4.44
 telegram
 telegraph
-telethon==1.25.2
-TgCrypto
+telethon==1.25.4
 TruthDarePy
+TgCrypto
 ujson
 wget
 wikipedia
