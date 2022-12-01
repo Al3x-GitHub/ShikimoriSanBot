@@ -7,11 +7,13 @@
 <p align="center">
   <img src="https://github.com/AL3X-Github/Resources/blob/main/Photos/Shikimori-San.jpeg">
 </p>
-
+<h3 align="center">
+    Ready To Use Method
+</h3>
 <p align="center">
-<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+    A Ready-To-Use Running Instance Of This Bot Can Be Found On Telegram <br>
+    <a href="http://telegram.me/ShikimoriSan1Bot"> Shikimori's San </a>
 </p>
-
 <h3 align="center">
     ─「 𝐃𝐞𝐩𝐥𝐨𝐲 𝐓𝐨 𝐇𝐞𝐫𝐨𝐤𝐮 」─
 </h3>
