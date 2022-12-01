@@ -8,11 +8,22 @@
   <img src="https://github.com/AL3X-Github/Resources/blob/main/Photos/Shikimori-San.jpeg">
 </p>
 <h3 align="center">
-    Ready To Use Method
+    ─「 𝐑𝐞𝐚𝐝𝐲 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞𝐭𝐡𝐨𝐝 」─
 </h3>
 <p align="center">
     A Ready-To-Use Running Instance Of This Bot Can Be Found On Telegram <br>
     <a href="http://telegram.me/ShikimoriSan1Bot"> Shikimori's San </a>
+</p>
+
+<h3 align="center">
+   ─「 𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐦𝐞𝐧𝐭𝐬 」─
+</h3>
+
+<p align="center">
+    <a href="https://www.python.org/downloads/release/python-390/"> Python3.9 </a> |
+    <a href="https://docs.pyrogram.org/intro/setup#api-keys"> Telegram API Key </a> |
+    <a href="https://t.me/botfather"> Telegram Bot Token </a> |
+    <a href="https://telegra.ph/How-To-get-Mongodb-URI-04-06"> MongoDB URI </a>
 </p>
 <h3 align="center">
     ─「 𝐃𝐞𝐩𝐥𝐨𝐲 𝐓𝐨 𝐇𝐞𝐫𝐨𝐤𝐮 」─
