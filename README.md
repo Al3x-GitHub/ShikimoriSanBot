@@ -36,7 +36,6 @@
 <h3 align="center">
     ─「 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 & 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 」─
 </h3>
-
 <div align="center">
 
 ![Support Cover](https://github.com/AL3X-Github/Resources/blob/main/Photos/Support.png)
@@ -46,13 +45,13 @@
 <div align="center">
 
 
-[![Telegram](https://img.shields.io/badge/Group-%232C3454?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.dog/MaximXGroup) [![Telegram](https://img.shields.io/badge/Channel-%232C3454?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.dog/MaximXChannels)
+[![Telegram](https://img.shields.io/badge/Group-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.dog/MaximXGroup) [![Telegram](https://img.shields.io/badge/Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.dog/MaximXChannels)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/AL3X-Github)
 
 <h6>
 
-**Copyright 2022 :** [**Iᴢυɱi 和泉**](https://telegram.dog/MaximXRobot) 
+**𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 © 2022** [**Iᴢυɱi 和泉**](https://telegram.me/MaximXRobot) 
 
 </h6>
 </div>
