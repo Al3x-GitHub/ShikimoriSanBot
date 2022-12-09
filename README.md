@@ -2,7 +2,7 @@
     ──「 𝐒𝐡𝐢𝐤𝐢𝐦𝐨𝐫𝐢 𝐒𝐚𝐧 𝐁𝐨𝐭 」──
 </h2>
 
-> Shikimori San Is The Most Complete Bot To Help You Manage Your Groups Easily And Safely!
+> [Shikimori San](https://github.com/ikx7a/Shikimori-San) Is The Most Complete Bot To Help You Manage Your Groups Easily And Safely!
 
 <p align="center">
   <img src="https://github.com/AL3X-Github/Resources/blob/main/Photos/Shikimori-San.jpeg">
@@ -26,15 +26,10 @@
     <a href="https://telegra.ph/How-To-get-Mongodb-URI-04-06"> MongoDB URI </a>
 </p>
 <h3 align="center">
-    ─「 𝐃𝐞𝐩𝐥𝐨𝐲 𝐓𝐨 𝐇𝐞𝐫𝐨𝐤𝐮 」─
+    ─「 𝐃𝐞𝐩𝐥𝐨𝐲𝐞𝐦𝐞𝐧𝐭 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 」─
 </h3>
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AL3X-Github/ShikimoriSanBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-<p align="center">
-  <img src="https://github.com/AL3X-Github/Resources/blob/main/Photos/Shikimori's.jpeg">
-</p>
-
 
 <h3 align="center">
     ─「 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 & 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 」─
